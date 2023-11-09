@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-lpag
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0033-tenant/cin4s-839-0033-app/devfile-sample-lpag@sha256:5aab5625b0b434cd82bc5e1d1102fb07c1c235537958634bf736483261fd552a
+        name: my-nodejs
+        resources: {}
+status: {}
